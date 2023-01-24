@@ -1,0 +1,106 @@
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    background-color: beige;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+}
+
+header {
+    color: black;
+    overflow: hidden;
+}
+
+
+hgroup {
+    width:72%;
+    float:left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    border: 2px solid black;
+    color: black;
+}
+
+td input[type="checkbox"] {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+td input[type="text"] {
+    float: left;
+    width: 97%;
+}
+
+td input[type="date"] {
+    float: left;
+    width: 97%;
+}
+
+td input[type="number"] {
+    float: left;
+    width: 97%;
+}
+
+td {
+    padding: 5px;
+    border: 2px solid black;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 10px 20px;
+     text-decoration: none;
+}
+
+li a:hover {
+    background-color: #3f5971f1;
+}
+
+section {
+    width: 80%;
+    background-color: #59738bf1;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    border-width: 1.5px;
+    padding: 20px;
+    color: black;
+}
+
+footer {
+    width:70%;
+    color:white;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: right;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses</title>
+    <link rel="icon" type="image/x-icon" href="5501391.png">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+</head>
+<body>
+ 
+<header>
+
+  <hgroup>
+    <h1>List of Expenses</h1>
+  </hgroup>
+
+ <nav>
+    <ul>
+      <li><a href="index.html">Add Expenses</a></li>
+      <li><a href="List_Expenses.html">List of Expenses</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+ </header>
+<br>
+<section>
+    <h2> Table list with expenses </h2>
+    <div class="card">
+        <div class="card-header"><b>Select Expenses File to Show</b></div>
+        <div class="card-body">
+
+            <input type="file" id="excel_file" />
+
+        </div>
+    </div>
+    <div id="excel_data" class="mt-5"></div>
+    <br>
+</section>
+<br>
+<footer>
+<small>Copyright &copy; 2022 Alexandru Corjuc</small>
+</footer>
+</body>
+</html> 
+<script src="script_readdatabase.js"></script>

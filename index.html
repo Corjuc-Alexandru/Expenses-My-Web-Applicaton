@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses</title>
+    <link rel="icon" type="image/x-icon" href="5501391.png">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Add Expenses</h1>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="index.html">Add Expenses</a></li>
+                <li><a href="List_Expenses.html">List of Expenses</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <section>
+        <h2> Add expenses to the table </h2>
+        <br>
+        <center>
+            <table id="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Date ( dd/mm/yyyy )</th>
+                    <th>Paid</th>
+                    <th style="width:5%">Select</th>
+                </tr>
+                <tr id="1">
+                    <td> <input type="text" id="dataName1" name="Name[]"> </td>
+                    <td> <input type="date" id="dataDate1" name="Date"> </td>
+                    <td> <input type="number" id="dataPaid1" name="Paid"> </td>
+                    <td> <input type="checkbox" id="cb1" name="select" /> </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <button type="button" onclick="addNewLine()">Add new line</button>
+            <button type="button" onclick="remALine()">Remove a line</button>
+            <button type="button" onclick="sellectAllLine()">Select All Lines</button>
+        </center>
+        <br>
+        <center><button type="button" onclick="insertExpense()">Save to Expenses File</button></center>
+    </section>
+    <br>
+    <footer>
+        <small>Copyright &copy; 2022 Alexandru Corjuc</small>
+    </footer>
+</body>
+</html>
+<script src="script_database.js"></script>
+<script src="script_lines.js"></script>
